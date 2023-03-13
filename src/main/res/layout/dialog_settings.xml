@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="630dp"
+    android:padding="1dp"
+    android:background="@color/grey_teal"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:backgroundTintMode="@color/teal_200">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_display_settings_24_d">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Set / Change Limits"
+            android:textSize="22dp"
+            android:layout_marginHorizontal="10dp"
+            >
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Limit                       :       "
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp">
+
+
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ex. 1000"
+                android:id="@+id/dailyLimit"
+                android:textColorHint="@color/grey_teal"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Monthly Limit                 :       "
+                android:textColor="@color/white"
+                android:textSize="17dp">
+
+
+            </TextView>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ex. 1000"
+                android:id="@+id/monthlyLimit"
+                android:textColorHint="@color/grey_teal"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/white">
+
+            </EditText>
+
+
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banks"
+                android:textSize="22dp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp">
+
+
+            </TextView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SBI Bank               "
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp">
+
+
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Change Balance"
+                android:id="@+id/balanceAmt"
+                android:textColorHint="@color/grey_teal"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white">
+
+            </EditText>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications                     "
+                android:textSize="22dp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp">
+
+
+            </TextView>
+
+            <ToggleButton
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:textSize="12dp"
+                android:id="@+id/notificationToggle"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/teal_200">
+
+            </ToggleButton>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_logout_24"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="4dp"
+                android:id="@+id/logOutimg"
+                >
+
+            </ImageButton>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:id="@+id/lofOutbtn"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/black"
+                ></Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_shape_line_24"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="4dp"
+                android:id="@+id/aboutImg"
+                >
+
+            </ImageButton>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" About Us"
+                android:id="@+id/aboutBtn"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/black"
+                ></Button>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_share_24"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="4dp"
+            android:id="@+id/shareImg"
+            >
+
+        </ImageButton>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:id="@+id/shareBtn"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"
+            ></Button>
+
+
+
+    </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/done"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:textSize="19dp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/teal_200"
+            ></Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
